@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PK2</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="title_activity_ver_ubicacion_cliente">VerUbicacionClienteActivity</string>
+    <string name="title_activity_perra">perra</string>
+</resources>

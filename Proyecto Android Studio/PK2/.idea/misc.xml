@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Carpetas Windows/d/pk2 david git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_descripcion_habitacion.xml" value="0.30683760683760686" />
+        <entry key="..\:/Carpetas Windows/d/pk2 david git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_habitaciones.xml" value="0.30683760683760686" />
+        <entry key="..\:/Carpetas Windows/d/pk2 david git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_moteles.xml" value="0.29743589743589743" />
+        <entry key="..\:/Carpetas Windows/d/pk2 david git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_maps.xml" value="0.30683760683760686" />
+        <entry key="..\:/Carpetas Windows/d/pk2 david git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_perfil.xml" value="0.30683760683760686" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_adm_log.xml" value="0.29743589743589743" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_admin_chats.xml" value="0.1706140350877193" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat_listchats.xml" value="0.1706140350877193" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat_r_text_message.xml" value="0.1706140350877193" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat_s_text_message.xml" value="0.1706140350877193" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_crear_habitacon.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_crear_motel.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_descripcion_habitacion.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_habitaciones.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_moteles.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_main.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_mapa.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_perfil.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro.xml" value="0.29743589743589743" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro_duenio.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_sender_text_message.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_temperatura.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/cards.xml" value="0.30526315789473685" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/cardsHab.xml" value="0.33" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.318859649122807" />
+        <entry key="..\:/Carpetas Windows/documentos/GitHub/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.318859649122807" />
+        <entry key="..\:/Carpetas Windows/documentos/Universidad/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat.xml" value="0.33" />
+        <entry key="..\:/Carpetas Windows/documentos/Universidad/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_descripcion_habitacion.xml" value="0.29743589743589743" />
+        <entry key="..\:/Carpetas Windows/documentos/Universidad/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_habitaciones.xml" value="0.29743589743589743" />
+        <entry key="..\:/Carpetas Windows/documentos/Universidad/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_moteles.xml" value="0.29743589743589743" />
+        <entry key="..\:/Carpetas Windows/documentos/Universidad/pk2_git/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_maps.xml" value="0.29743589743589743" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat.xml" value="0.2957427536231884" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_descripcion_habitacion.xml" value="0.20520833333333333" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_habitaciones.xml" value="0.20520833333333333" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_moteles.xml" value="0.20520833333333333" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_maps.xml" value="0.20520833333333333" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_perfil.xml" value="0.20520833333333333" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro.xml" value="0.20520833333333333" />
+        <entry key="..\:/UNIVERSIDAD/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_sender_text_message.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_adm_log.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_admin_chats.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat_listchats.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat_r_text_message.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat_s_text_message.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_crear_habitacon.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_crear_motel.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_crear_oferta.xml" value="0.33" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_descripcion_habitacion.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_habitaciones.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_moteles.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_mapa.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_perfil.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro_duenio.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_temperatura.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_ver_ubicacion_cliente.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/cards.xml" value="0.3625" />
+        <entry key="..\:/Users/Aleja/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/cards_hab.xml" value="0.3625" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/font/roboto_bold.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/font/roboto_thin.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_adm_log.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_crear_habitacon.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_descripcion_habitacion.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_editar_informacion_motel.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_editar_informacion_motel_registro.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_habitaciones.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_moteles.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_mapa.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_perfil.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro_duenio.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/User/Desktop/ARCHIVOS/UNI/SEMESTRE 8/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_sender_text_message.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_adm_log.xml" value="0.5" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_chat.xml" value="0.2554347826086957" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_crear_habitacon.xml" value="0.3401268115942029" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_crear_motel.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_descripcion_habitacion.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_editar_informacion_motel.xml" value="0.3401268115942029" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_habitaciones.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_moteles.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_perfil.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_registro_duenio.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_sender_text_message.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_ver_ubicacion_cliente.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/menu/duenomenu.xml" value="0.5" />
+        <entry key="..\:/Users/Usuario/Desktop/Pk2/Proyecto Android Studio/PK2/app/src/main/res/menu/usermenu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/alejo/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_adm_log.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/alejo/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_lista_habitaciones.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/alejo/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_main.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/alejo/Documents/GitHub/Pk2/Proyecto Android Studio/PK2/app/src/main/res/layout/activity_mapa.xml" value="0.20052083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
