@@ -8,16 +8,16 @@
     tools:context=".AdmLogActivity">
 
     <ImageView
-            android:id="@+id/portadaMotelDueno"
-            android:layout_width="match_parent"
-            android:layout_height="271dp"
-            android:foreground="#E22E2853"
-            android:foregroundTintMode="src_atop"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/motel4" />
+        android:id="@+id/portadaMotelDueno"
+        android:layout_width="match_parent"
+        android:layout_height="271dp"
+        android:foreground="#EF570201"
+        android:foregroundTintMode="src_atop"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/motel4" />
 
 
     <TextView
@@ -38,7 +38,7 @@
     <Button
         android:id="@+id/logOutDuenio"
         android:layout_width="133dp"
-        android:layout_height="34dp"
+        android:layout_height="50dp"
         android:layout_weight="0.2"
         android:text="Cerrar Sesion"
         android:textColor="#FFFFFF"
@@ -53,10 +53,10 @@
     <Button
         android:id="@+id/btnAgHab"
         android:layout_width="133dp"
-        android:layout_height="34dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_weight="0.2"
-        android:text="Agregar Habitacion"
+        android:text="Crear Oferta"
         android:textColor="#FFFFFF"
         android:textSize="10dp"
         android:textStyle="bold"
@@ -102,21 +102,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <Button
-        android:id="@+id/chats"
-        android:layout_width="133dp"
-        android:layout_height="34dp"
-        android:layout_weight="0.2"
-        android:text="Chats"
-        android:textColor="#FFFFFF"
-        android:textSize="10dp"
-        android:textStyle="bold"
-        app:backgroundTint="@color/moraitoMelo"
-        app:cornerRadius="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logOutDuenio" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

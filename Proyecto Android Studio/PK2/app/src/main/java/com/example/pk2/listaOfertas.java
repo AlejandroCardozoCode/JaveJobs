@@ -13,8 +13,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,7 +30,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lista_habitaciones extends AppCompatActivity {
+public class listaOfertas extends AppCompatActivity {
 
     CardView selecHabitacion;
     TextView txDireccion, txNombreMotel;
@@ -48,7 +46,7 @@ public class Lista_habitaciones extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_habitaciones);
+        setContentView(R.layout.activity_lista_ofertas_cliente);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().getWindowInsetsController().setSystemBarsAppearance(0x00000008, 0x00000008);
@@ -109,10 +107,10 @@ public class Lista_habitaciones extends AppCompatActivity {
                     Log.e("habitacion", habitacion.toString());
                     elementos.add(habitacion);
                 }
-                adaptadorHabi listaAdaptador = new adaptadorHabi(elementos, Lista_habitaciones.this, new adaptadorHabi.OnItemClickListener() {
+                adaptadorOferta listaAdaptador = new adaptadorOferta(elementos, listaOfertas.this, new adaptadorOferta.OnItemClickListener() {
                     @Override
                     public void onItemClick(HabitacionElementoList elementos) {
-                        Intent intent = new Intent(getApplicationContext(),Descripcion_habitacion.class);
+                        Intent intent = new Intent(getApplicationContext(), descripcionOferta.class);
                         intent.putExtra("nombre",elementos.getNombre());
                         intent.putExtra("precio",elementos.getPrecio());
                         intent.putExtra("des",elementos.getDescripcion());
@@ -127,7 +125,7 @@ public class Lista_habitaciones extends AppCompatActivity {
 
                 RecyclerView recyclerView = findViewById(R.id.recyclerHab);
                 recyclerView.setHasFixedSize(true);
-                recyclerView.setLayoutManager(new LinearLayoutManager(Lista_habitaciones.this));
+                recyclerView.setLayoutManager(new LinearLayoutManager(listaOfertas.this));
                 recyclerView.setAdapter(listaAdaptador);
 
             }

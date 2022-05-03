@@ -18,8 +18,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Build;
@@ -27,13 +25,13 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.example.pk2.model.HabitacionElementoList;
 import com.example.pk2.model.Motel;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -51,15 +49,18 @@ import com.google.firebase.storage.UploadTask;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 //Para la creación de habitación.
-public class crear_habitacon extends AppCompatActivity {
+public class crearOferta extends AppCompatActivity {
     private static final int RCODE_CAMERA = 1, RCODE_REXTERNAL = 2, RCODE_WEXTERNAL = 3;
     Bitmap imageArray[];
     EditText etxt_NombreHabitacion, etext_Precio, etext_Descripcion, horasI;
     String  dirImg1, dirImg2, dirImg3, idGobal;
     ImageButton img_1, img_2, img_3, img_4, img_5, img_6;
     Button btn_gallery, btn_camara, btn_save;
+    Spinner spinner;
     int imgIndexClicked = -1;
     //Base de datos
     FirebaseDatabase database;
@@ -72,6 +73,7 @@ public class crear_habitacon extends AppCompatActivity {
     private SensorManager sensorManager;
     private Sensor sensor;
     private boolean estaDisponible;
+    List<String> spinnerArray =  new ArrayList<String>();
 
 
     @SuppressLint("WrongConstant")
@@ -97,6 +99,19 @@ public class crear_habitacon extends AppCompatActivity {
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        // creacion del spinner y de los datos que van dentro de este
+        spinnerArray.add("Administracion");
+        spinnerArray.add("Programador");
+        spinnerArray.add("Diseñador");
+        spinnerArray.add("Arquitecto");
+        spinnerArray.add("Ingeniero");
+        spinnerArray.add("Medicina");
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                this, android.R.layout.simple_spinner_item, spinnerArray);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        Spinner sItems = (Spinner) findViewById(R.id.spinner);
+        sItems.setAdapter(adapter);
         //Inflación de los Botones de Imagen:
         img_1 = findViewById(R.id.img_1);
         img_2 = findViewById(R.id.img_2);
@@ -146,6 +161,7 @@ public class crear_habitacon extends AppCompatActivity {
         String imagen3 = imagen3v;
         String idMotel = id;
         String horas = horasv;
+
         if(!nom.isEmpty() ) {
             /*
             HabitacionElementoList habitacion = new HabitacionElementoList(nom,id,des,imagen1,imagen2,imagen3,horas,precio, temperatura);
@@ -273,7 +289,7 @@ public class crear_habitacon extends AppCompatActivity {
         }
         else
         {
-            Toast.makeText(crear_habitacon.this, "Por favor seleccionar una imagen...!",Toast.LENGTH_LONG).show();
+            Toast.makeText(crearOferta.this, "Por favor seleccionar una imagen...!",Toast.LENGTH_LONG).show();
         }
 
 
@@ -289,7 +305,7 @@ public class crear_habitacon extends AppCompatActivity {
         }
         else
         {
-            Toast.makeText(crear_habitacon.this, "Por favor seleccionar una imagen...!",Toast.LENGTH_LONG).show();
+            Toast.makeText(crearOferta.this, "Por favor seleccionar una imagen...!",Toast.LENGTH_LONG).show();
         }
     }
 
@@ -303,7 +319,7 @@ public class crear_habitacon extends AppCompatActivity {
             //En caso que no se haya aceptado el permiso
             if (ActivityCompat.shouldShowRequestPermissionRationale(context, permisos))
             {
-                Toast.makeText(crear_habitacon.this, justificacion,Toast.LENGTH_LONG).show();
+                Toast.makeText(crearOferta.this, justificacion,Toast.LENGTH_LONG).show();
             }
             ActivityCompat.requestPermissions(context, new String[]{permisos}, id_Code);
         }

@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,13 +22,17 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Registro extends AppCompatActivity {
 
     TextView correo;
     TextView contraseña;
     TextView nombre;
-    TextView apellido;
     TextView cedula;
+    Button botonRegistro;
+    Spinner sItems ;
     //Autenticacion de la base de datos
     FirebaseAuth mAuth;
     //Base de datos
@@ -33,7 +40,7 @@ public class Registro extends AppCompatActivity {
     DatabaseReference myRef;
     //Ruta en la que se guarda el usuario
     static final String PATH_USERS = "users/";
-
+    List<String> spinnerArray =  new ArrayList<String>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,16 +53,36 @@ public class Registro extends AppCompatActivity {
         correo = findViewById(R.id.inputMailRegi);
         contraseña = findViewById(R.id.inputPasswordRegi);
         nombre = findViewById(R.id.nombreInputRegi);
-        apellido = findViewById(R.id.apellidoInputRegi);
         cedula = findViewById(R.id.cedulaInputRegi);
+        botonRegistro = findViewById(R.id.botonRegistro);
+        // creacion del spinner y de los datos que van dentro de este
+        spinnerArray.add("Administracion");
+        spinnerArray.add("Programador");
+        spinnerArray.add("Diseñador");
+        spinnerArray.add("Arquitecto");
+        spinnerArray.add("Ingeniero");
+        spinnerArray.add("Medicina");
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                this, R.layout.spinner_registro, spinnerArray);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sItems = (Spinner) findViewById(R.id.spinner2);
+        sItems.setAdapter(adapter);
+        botonRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               regist(view);
+            }
+        });
     }
     public void regist(View v)
     {
         String mail = correo.getText().toString();
         String pass = contraseña.getText().toString();
         String name = nombre.getText().toString();
-        String lastN = apellido.getText().toString();
+        String lastN = "testestt";
         String cc = cedula.getText().toString();
+        String sector = sItems.getSelectedItem().toString();
         if(validarDatos(mail,pass))
         {
             /*Creacion de la autenticacion para el login despues de validar el formato del correo y
@@ -73,7 +100,7 @@ public class Registro extends AppCompatActivity {
                             String rol = "0";
                             upcrb.setDisplayName(rol);
                             user.updateProfile(upcrb.build());*/
-                            guardarDatos(mail,pass,name,lastN,cc, user.getUid());
+                            guardarDatos(mail,pass,name,lastN,cc, user.getUid(), sector);
                             actualizarPantalla(user);
                         }
                     }else
@@ -98,7 +125,7 @@ public class Registro extends AppCompatActivity {
             startActivity(intent);
         }
     }
-    private void guardarDatos(String mail,String pass,String name,String lastN,String cc, String uid)
+    private void guardarDatos(String mail,String pass,String name,String lastN,String cc, String uid, String sector)
     {
         //validacion
         int cedula = Integer.parseInt(cc);
@@ -113,6 +140,7 @@ public class Registro extends AppCompatActivity {
             usuario.setCorreo(mail);
             usuario.setId(uid);
             usuario.setUbi(false);
+            usuario.setSector(sector);
             myRef = database.getReference(PATH_USERS);
             //asignacion de cc como key
             myRef = database.getReference(PATH_USERS + uid);

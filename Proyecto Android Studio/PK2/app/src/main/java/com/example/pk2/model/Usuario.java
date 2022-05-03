@@ -9,12 +9,13 @@ public class Usuario {
     double lon;
     boolean ubi;
     List<Chat> listChats;
+    private String sector;
 
     public Usuario() {
         listChats = new ArrayList<>();
     }
 
-    public Usuario(String correo, String ccontraseña, String nombre, String apellido, String cedula, String id, double lat, double lon, boolean ubi) {
+    public Usuario(String correo, String ccontraseña, String nombre, String apellido, String cedula, String id, double lat, double lon, boolean ubi, String sector) {
         this.correo = correo;
         this.ccontraseña = ccontraseña;
         this.nombre = nombre;
@@ -24,6 +25,7 @@ public class Usuario {
         this.lat = lat;
         this.lon = lon;
         this.ubi = ubi;
+        this.sector = sector;
         listChats = new ArrayList<>();
     }
     public void agregarChat(Chat myChat)
@@ -49,6 +51,10 @@ public class Usuario {
             }
         }
         return false;
+    }
+
+    public String getSector() {
+        return sector;
     }
 
     public int getChatPosition(String idChat)
@@ -188,5 +194,9 @@ public class Usuario {
 
     public void setCedula(String cedula) {
         this.cedula = cedula;
+    }
+
+    public void setSector(String sector) {
+        this.sector = sector;
     }
 }

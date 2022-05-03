@@ -47,11 +47,11 @@
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
-            android:name=".crear_habitacon"
+            android:name=".crearOferta"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
-            android:name=".crear_motel"
+            android:name=".crearEmpresa"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
@@ -68,10 +68,10 @@
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
-            android:name=".Descripcion_habitacion"
+            android:name=".descripcionOferta"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
-            android:name=".Lista_habitaciones"
+            android:name=".listaOfertas"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".ListaMoteles"

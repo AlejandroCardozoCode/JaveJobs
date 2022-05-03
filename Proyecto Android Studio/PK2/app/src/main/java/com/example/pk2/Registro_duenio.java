@@ -84,7 +84,7 @@ public class Registro_duenio extends AppCompatActivity {
     {
         if(user != null)
         {
-            Intent intent = new Intent(Registro_duenio.this,crear_motel.class);
+            Intent intent = new Intent(Registro_duenio.this, crearEmpresa.class);
             intent.putExtra("cedula",user.getUid());
             startActivity(intent);
         }

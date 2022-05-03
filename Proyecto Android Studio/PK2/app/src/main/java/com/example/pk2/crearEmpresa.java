@@ -36,7 +36,7 @@ import com.google.firebase.storage.UploadTask;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-public class crear_motel extends AppCompatActivity {
+public class crearEmpresa extends AppCompatActivity {
 
     TextView nombre;
     TextView direccion;
@@ -86,7 +86,7 @@ public class crear_motel extends AppCompatActivity {
             myRef = database.getReference(PATH_MOTEL + id);
             //escritura
             myRef.setValue(motel);
-            Intent intent = new Intent(crear_motel.this,LogIn.class);
+            Intent intent = new Intent(crearEmpresa.this,LogIn.class);
             startActivity(intent);
         }
 
@@ -110,7 +110,7 @@ public class crear_motel extends AppCompatActivity {
             //En caso que no se haya aceptado el permiso
             if (ActivityCompat.shouldShowRequestPermissionRationale(context, permisos))
             {
-                Toast.makeText(crear_motel.this, justificacion,Toast.LENGTH_LONG).show();
+                Toast.makeText(crearEmpresa.this, justificacion,Toast.LENGTH_LONG).show();
             }
             ActivityCompat.requestPermissions(context, new String[]{permisos}, id_Code);
         }
@@ -146,7 +146,7 @@ public class crear_motel extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(crear_motel.this, "La aplicación no tine el permiso apropiado para abrir la galería.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(crearEmpresa.this, "La aplicación no tine el permiso apropiado para abrir la galería.",Toast.LENGTH_LONG).show();
                 }
                 break;
         }

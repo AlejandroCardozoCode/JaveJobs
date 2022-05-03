@@ -12,15 +12,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.pk2.model.HabitacionElementoList;
-import com.example.pk2.model.MotelElementoList;
 
 import java.util.List;
 
-public class adaptadorHabi extends RecyclerView.Adapter<adaptadorHabi.ViewHolder>{
+public class adaptadorOferta extends RecyclerView.Adapter<adaptadorOferta.ViewHolder>{
     private List<HabitacionElementoList> datos;
     private LayoutInflater inflater;
     private Context context;
-    final adaptadorHabi.OnItemClickListener listener;
+    final adaptadorOferta.OnItemClickListener listener;
 
     public  interface  OnItemClickListener{
         void onItemClick(HabitacionElementoList elementos);
@@ -28,7 +27,7 @@ public class adaptadorHabi extends RecyclerView.Adapter<adaptadorHabi.ViewHolder
 
 
 
-    public adaptadorHabi(List<HabitacionElementoList> lista, Context context, adaptadorHabi.OnItemClickListener listener ){
+    public adaptadorOferta(List<HabitacionElementoList> lista, Context context, adaptadorOferta.OnItemClickListener listener ){
         this.inflater = LayoutInflater.from(context);
         this.context = context;
         this.datos = lista;
@@ -43,13 +42,13 @@ public class adaptadorHabi extends RecyclerView.Adapter<adaptadorHabi.ViewHolder
 
     @NonNull
     @Override
-    public adaptadorHabi.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public adaptadorOferta.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.cards_hab, null);
-        return new adaptadorHabi.ViewHolder(view);
+        return new adaptadorOferta.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull adaptadorHabi.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull adaptadorOferta.ViewHolder holder, int position) {
         holder.bindData(datos.get(position));
     }
 

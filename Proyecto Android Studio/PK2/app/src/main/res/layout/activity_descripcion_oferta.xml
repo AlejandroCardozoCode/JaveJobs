@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:layout_weight="1"
-    tools:context=".Descripcion_habitacion">
+    tools:context=".descripcionOferta">
 
     <TextView
         android:id="@+id/nombreHabitacion"
@@ -23,13 +23,15 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="8dp"
         android:text="Fotos"
         android:textColor="#222837"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/precioHabitacion" />
+        app:layout_constraintTop_toBottomOf="@+id/botonPostular" />
 
     <TextView
         android:id="@+id/textView16"
@@ -59,7 +61,7 @@
         android:id="@+id/precioHabitacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         android:text="Salario: 1.000.000"
         android:textColor="#222837"
         android:textSize="20sp"
@@ -67,13 +69,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descripcionHabitacion" />
 
+    <Button
+        android:id="@+id/botonPostular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/moraitoMelo"
+        android:text="Postularse"
+        app:cornerRadius="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precioHabitacion" />
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="450dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20">
 
         <LinearLayout
             android:layout_width="match_parent"

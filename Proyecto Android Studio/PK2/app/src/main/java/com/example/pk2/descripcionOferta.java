@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-public class Descripcion_habitacion extends AppCompatActivity {
+public class descripcionOferta extends AppCompatActivity {
 
     TextView nombre, descripcion, precio;
     ImageView img1, img2, img3;
@@ -35,7 +35,7 @@ public class Descripcion_habitacion extends AppCompatActivity {
         nombre.setText(getIntent().getStringExtra("nombre"));
         descripcion.setText(getIntent().getStringExtra("des"));
 
-        precio.setText("Precio: $"+ getIntent().getStringExtra("precio")+ " / " + getIntent().getStringExtra("hora") + " horas");
+        precio.setText("Salario: $"+ getIntent().getStringExtra("precio")+ " / " + getIntent().getStringExtra("hora") + " horas");
         Glide.with(getApplicationContext())
                 .load(getIntent().getStringExtra("img1"))
                 .into(img1);

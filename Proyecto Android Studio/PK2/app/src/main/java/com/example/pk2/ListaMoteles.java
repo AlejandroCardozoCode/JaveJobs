@@ -83,7 +83,7 @@ public class ListaMoteles extends AppCompatActivity {
                 adaptadorList listaAdaptador = new adaptadorList(elementos, ListaMoteles.this, new adaptadorList.OnItemClickListener() {
                     @Override
                     public void onItemClick(MotelElementoList elementos) {
-                        Intent intent = new Intent(getApplicationContext(),Lista_habitaciones.class);
+                        Intent intent = new Intent(getApplicationContext(), listaOfertas.class);
                         intent.putExtra("idMotel",elementos.getId());
                         startActivity(intent);
                     }

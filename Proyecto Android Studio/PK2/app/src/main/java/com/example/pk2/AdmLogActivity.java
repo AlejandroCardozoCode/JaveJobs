@@ -3,7 +3,6 @@ package com.example.pk2;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,12 +15,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.pk2.model.HabitacionElementoList;
 import com.example.pk2.model.Motel;
-import com.example.pk2.model.MotelElementoList;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -59,23 +56,14 @@ public class AdmLogActivity extends AppCompatActivity {
         portada = findViewById(R.id.portadaMotelDueno);
         direccionMotel = findViewById(R.id.textoDireccion);
         botonCerrarSesion = findViewById(R.id.logOutDuenio);
-        chat = findViewById(R.id.chats);
         database = FirebaseDatabase.getInstance();
         mAuth = FirebaseAuth.getInstance();
         elementos = new ArrayList<>();
-        chat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //aca tiene que llamar al historial de chats
-                Intent intent = new Intent(v.getContext(),activity_admin_chats.class);
-                intent.putExtra("valor", direccionMotel.getText());
-                startActivity(intent);
-            }
-        });
+
         btnAgHab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intCrearHab = new Intent(v.getContext(),crear_habitacon.class);
+                Intent intCrearHab = new Intent(v.getContext(), crearOferta.class);
                 intCrearHab.putExtra("idMotel", mAuth.getCurrentUser().getUid());
                 intCrearHab.putExtra("numero", numeroHab);
                 startActivity(intCrearHab);
@@ -141,10 +129,10 @@ public class AdmLogActivity extends AppCompatActivity {
                     Log.e("habitacion", habitacion.toString());
                     elementos.add(habitacion);
                 }
-                adaptadorHabi listaAdaptador = new adaptadorHabi(elementos, AdmLogActivity.this, new adaptadorHabi.OnItemClickListener() {
+                adaptadorOferta listaAdaptador = new adaptadorOferta(elementos, AdmLogActivity.this, new adaptadorOferta.OnItemClickListener() {
                     @Override
                     public void onItemClick(HabitacionElementoList elementos) {
-                        Intent intent = new Intent(getApplicationContext(),Descripcion_habitacion.class);
+                        Intent intent = new Intent(getApplicationContext(), descripcionOferta.class);
                         intent.putExtra("nombre",elementos.getNombre());
                         intent.putExtra("precio",elementos.getPrecio());
                         intent.putExtra("des",elementos.getDescripcion());
