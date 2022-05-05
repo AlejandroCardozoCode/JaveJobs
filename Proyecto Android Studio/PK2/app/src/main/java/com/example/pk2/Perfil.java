@@ -29,8 +29,8 @@ import com.google.firebase.database.ValueEventListener;
 public class Perfil extends AppCompatActivity {
 
     //variables
-    Button salir, temperatura;
-    TextView nombre, cedula, correo;
+    Button salir;
+    TextView nombre, cedula, correo, sector;
     //autenticacion firebase
     FirebaseAuth mAuth;
     static final String PATH_USERS = "users/";
@@ -48,8 +48,9 @@ public class Perfil extends AppCompatActivity {
         getWindow().getDecorView().getWindowInsetsController().setSystemBarsAppearance(0x00000008, 0x00000008);
         //inflates
         salir = findViewById(R.id.botonLogOut);
-        nombre = findViewById(R.id.perfilNombre);
+        nombre = findViewById(R.id.nombreText);
         cedula = findViewById(R.id.perfilCedula);
+        sector = findViewById(R.id.sectorTexto);
         correo = findViewById(R.id.perfilCorreo);
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
@@ -78,6 +79,7 @@ public class Perfil extends AppCompatActivity {
                         nombre.setText(usuario.getNombre());
                         cedula.setText(usuario.getCedula());
                         correo.setText(usuario.getCorreo());
+                        sector.setText(usuario.getSector());
                     }
                 }
                 }

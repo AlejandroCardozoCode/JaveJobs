@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.pk2.model.HabitacionElementoList;
 import com.example.pk2.model.Motel;
+import com.example.pk2.model.Usuario;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -36,11 +37,14 @@ public class listaOfertas extends AppCompatActivity {
     TextView txDireccion, txNombreMotel;
     ImageView imagenMotel;
     static final String PATH_MOTEL = "motel/";
+    static final String PATH_USERS = "users/";
     FirebaseDatabase database;
     DatabaseReference myRef;
     FirebaseAuth mAuth;
     List<HabitacionElementoList> elementos;
-    String idGlobal;
+    String idGlobal, sectorUsuario;
+
+    Usuario usuario;
     @SuppressLint("WrongConstant")
     @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
@@ -51,6 +55,7 @@ public class listaOfertas extends AppCompatActivity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().getWindowInsetsController().setSystemBarsAppearance(0x00000008, 0x00000008);
         //inflate
+
         txDireccion = findViewById(R.id.textoDireccion);
         txNombreMotel = findViewById(R.id.textoHabitacionesNombreMotel);
         imagenMotel = findViewById(R.id.portadaMotelCliente);
@@ -58,7 +63,7 @@ public class listaOfertas extends AppCompatActivity {
         elementos = new ArrayList<>();
         database = FirebaseDatabase.getInstance();
         mAuth = FirebaseAuth.getInstance();
-
+        cargar2(mAuth.getCurrentUser());
 
     }
     private void cargar(FirebaseUser usuario)
@@ -88,6 +93,22 @@ public class listaOfertas extends AppCompatActivity {
             }
         });
     }
+
+    private void cargar2(FirebaseUser usuario2)
+    {
+        myRef = database.getReference(PATH_USERS);
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot child : snapshot.getChildren()) {
+                    usuario = child.getValue(Usuario.class);
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            };
+        });
+    }
     @Override
     protected void onResume() {
         super.onResume();
@@ -96,6 +117,7 @@ public class listaOfertas extends AppCompatActivity {
         cargarHab(idGlobal);
 
     }
+
     private void cargarHab(String idMotel)
     {
         myRef = database.getReference(PATH_MOTEL + idMotel + "/habitaciones/");
@@ -105,7 +127,9 @@ public class listaOfertas extends AppCompatActivity {
                 for (DataSnapshot child : snapshot.getChildren()) {
                     HabitacionElementoList habitacion = child.getValue(HabitacionElementoList.class);
                     Log.e("habitacion", habitacion.toString());
-                    elementos.add(habitacion);
+                    if (habitacion.getSector().equals(usuario.getSector())) {
+                        elementos.add(habitacion);
+                    }
                 }
                 adaptadorOferta listaAdaptador = new adaptadorOferta(elementos, listaOfertas.this, new adaptadorOferta.OnItemClickListener() {
                     @Override

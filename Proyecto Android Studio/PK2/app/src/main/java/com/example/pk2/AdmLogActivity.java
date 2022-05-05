@@ -132,7 +132,7 @@ public class AdmLogActivity extends AppCompatActivity {
                 adaptadorOferta listaAdaptador = new adaptadorOferta(elementos, AdmLogActivity.this, new adaptadorOferta.OnItemClickListener() {
                     @Override
                     public void onItemClick(HabitacionElementoList elementos) {
-                        Intent intent = new Intent(getApplicationContext(), descripcionOferta.class);
+                        Intent intent = new Intent(getApplicationContext(), descripcionOfertaEmpresa.class);
                         intent.putExtra("nombre",elementos.getNombre());
                         intent.putExtra("precio",elementos.getPrecio());
                         intent.putExtra("des",elementos.getDescripcion());

@@ -40,7 +40,7 @@
             android:layout_margin="7dp"
             android:layout_weight="10"
             android:background="#00FFFFFF"
-            android:scaleType="fitXY"
+            android:scaleType="fitCenter"
             app:srcCompat="@drawable/logo2"
             tools:ignore="SpeakableTextPresentCheck" />
 

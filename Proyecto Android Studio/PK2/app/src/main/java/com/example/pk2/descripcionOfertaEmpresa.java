@@ -1,31 +1,28 @@
 package com.example.pk2;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class descripcionOferta extends AppCompatActivity {
+import com.bumptech.glide.Glide;
+import com.example.pk2.R;
+
+public class descripcionOfertaEmpresa extends AppCompatActivity {
 
     TextView nombre, descripcion, precio;
     ImageView img1, img2, img3;
-    Button postular;
 
     @SuppressLint("WrongConstant")
     @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_descripcion_oferta);
+        setContentView(R.layout.activity_descripcion_oferta_empresa);
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().getWindowInsetsController().setSystemBarsAppearance(0x00000008, 0x00000008);
         //inflate
@@ -35,18 +32,9 @@ public class descripcionOferta extends AppCompatActivity {
         img1 = findViewById(R.id.imagen1Habitacion);
         img2 = findViewById(R.id.imagen2Habitacion);
         img3 = findViewById(R.id.imagen3Habitacion);
-        postular = findViewById(R.id.botonPostular);
 
         nombre.setText(getIntent().getStringExtra("nombre"));
         descripcion.setText(getIntent().getStringExtra("des"));
-
-        postular.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), postulado.class);
-                startActivity(intent);
-            }
-        });
 
         precio.setText("Salario: $"+ getIntent().getStringExtra("precio")+ " / " + getIntent().getStringExtra("hora") + " horas");
         Glide.with(getApplicationContext())

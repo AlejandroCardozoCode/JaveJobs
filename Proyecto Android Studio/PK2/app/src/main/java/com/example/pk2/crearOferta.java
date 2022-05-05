@@ -34,10 +34,12 @@ import android.widget.Toast;
 
 import com.example.pk2.model.HabitacionElementoList;
 import com.example.pk2.model.Motel;
+import com.example.pk2.model.Usuario;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -74,6 +76,7 @@ public class crearOferta extends AppCompatActivity {
     private Sensor sensor;
     private boolean estaDisponible;
     List<String> spinnerArray =  new ArrayList<String>();
+    Spinner sItems;
 
 
     @SuppressLint("WrongConstant")
@@ -110,7 +113,7 @@ public class crearOferta extends AppCompatActivity {
                 this, android.R.layout.simple_spinner_item, spinnerArray);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        Spinner sItems = (Spinner) findViewById(R.id.spinner);
+        sItems = (Spinner) findViewById(R.id.spinner);
         sItems.setAdapter(adapter);
         //Inflación de los Botones de Imagen:
         img_1 = findViewById(R.id.img_1);
@@ -127,6 +130,7 @@ public class crearOferta extends AppCompatActivity {
             }
         });
         imageArray = new Bitmap[6];
+
 
     }
     @Override
@@ -161,6 +165,7 @@ public class crearOferta extends AppCompatActivity {
         String imagen3 = imagen3v;
         String idMotel = id;
         String horas = horasv;
+        String sector = sItems.getSelectedItem().toString();
 
         if(!nom.isEmpty() ) {
             /*
@@ -181,7 +186,7 @@ public class crearOferta extends AppCompatActivity {
                             motel.setNumHab(numeroHabitacions);
                             // aumentar nuemro de habitaciones del motel
 
-                            HabitacionElementoList habitacion = new HabitacionElementoList(nom,idGobal,des,dirImg1,dirImg2,dirImg3,horas,precio);
+                            HabitacionElementoList habitacion = new HabitacionElementoList(nom,idGobal,des,dirImg1,dirImg2,dirImg3,horas,precio,sector);
                             motel.agregarHabitacion(habitacion);
                             myRef = database.getReference(PATH_MOTEL + idMotel);
                             myRef.setValue(motel);

@@ -1,11 +1,11 @@
 package com.example.pk2.model;
 
 public class HabitacionElementoList {
-    String nombre, id, descripcion, imagen1, imagen2, imagen3, horas, precio, temperatura;
+    String nombre, id, descripcion, imagen1, imagen2, imagen3, horas, precio, temperatura, sector;
 
     HabitacionElementoList (){}
 
-    public HabitacionElementoList(String nombre, String id, String descripcion, String imagen1, String imagen2, String imagen3, String horas, String precio) {
+    public HabitacionElementoList(String nombre, String id, String descripcion, String imagen1, String imagen2, String imagen3, String horas, String precio, String sector) {
         this.nombre = nombre;
         this.id = id;
         this.descripcion = descripcion;
@@ -15,8 +15,16 @@ public class HabitacionElementoList {
         this.horas = horas;
         this.precio = precio;
         this.temperatura = temperatura;
+        this.sector = sector;
     }
 
+    public String getSector() {
+        return sector;
+    }
+
+    public void setSector(String sector) {
+        this.sector = sector;
+    }
 
     public String getNombre() {
         return nombre;
